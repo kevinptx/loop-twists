@@ -1,12 +1,13 @@
 'use strict';
 
 function average(numbers) {
-  let total = numbers[0];
+  let total = 0;
   let i = 0;
-  while (i <= numbers.length){
+  while (i < numbers.length){
     total += numbers[i];
-    i++
+    i++;
   }
+
   return total/numbers.length;
 }
 
