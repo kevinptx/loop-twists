@@ -11,7 +11,15 @@ function max(numbers) {
 }
 
 function min(numbers) {
-  // your code here
+  let currentMin = numbers[0];
+  let i = 0;
+  while (i <= numbers.length) {
+    if (numbers[i] < currentMin){
+      currentMin = numbers[i];
+    }
+    i++;
+  }
+  return currentMin;
 }
 
 
