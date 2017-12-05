@@ -2,14 +2,17 @@
 
 function average(numbers) {
   let total = 0;
-  let i = 0;
-  while (i < numbers.length){
-    total += numbers[i];
-    i++;
-  }
+    numbers.forEach(i => total+= i);
 
   return total/numbers.length;
 }
+
+//let i = 0;
+//  while (i < numbers.length){
+//    total += numbers[i];
+//    i++;
+//  }
+
 
   // for (let i=1; i < numbers.length; i++) {
   //   total += numbers[i];
