@@ -2,8 +2,9 @@
 
 function max(numbers) {
   let currentMax = numbers[0];
-  let i = 0;
-  while (i <= numbers.length) {
+  let i = 1;
+  while ( i < numbers.length) {
+    console.log("Comparing", numbers[i], "against", currentMax)
     if (numbers[i] > currentMax){
       currentMax = numbers[i];
     }
@@ -11,11 +12,13 @@ function max(numbers) {
   }
   return currentMax;
 }
+console.log(max([]));
+
 
 function min(numbers) {
   let currentMin = numbers[0];
-  let i = 0;
-  while (i <= numbers.length) {
+  let i = 1;
+  while (i < numbers.length) {
     if (numbers[i] < currentMin){
       currentMin = numbers[i];
     }
